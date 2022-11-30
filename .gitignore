@@ -15,6 +15,15 @@ result-*
 debug/
 target/
 
+# Zig
+zig-cache/
+zig-out/
+/release/
+/debug/
+/build/
+/build-*/
+/docgen_tmp/
+
 # JetBrains
 .idea/
 
