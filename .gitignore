@@ -93,6 +93,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
+/.svelte-kit
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
 
 # JetBrains
 .idea/
@@ -144,5 +147,10 @@ tramp
 .apdisk
 .com.apple.timemachine.donotpresent
 .fseventsd
+
+# Misc sensitive
+.env
+.env.*
+!.env.example
 
 # Project specific files
