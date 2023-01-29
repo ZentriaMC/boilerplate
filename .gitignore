@@ -45,6 +45,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Golang
+!go.mod
+go.work
+
 # Rust
 **/*.rs.bk
 *.pdb
