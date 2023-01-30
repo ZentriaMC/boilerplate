@@ -152,6 +152,10 @@ tramp
 .com.apple.timemachine.donotpresent
 .fseventsd
 
+# Windows quirks
+[Dd]esktop.ini
+[Tt]humbs.db
+
 # Misc sensitive
 .env
 .env.*
