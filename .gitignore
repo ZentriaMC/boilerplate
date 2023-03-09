@@ -53,7 +53,7 @@ go.work
 **/*.rs.bk
 *.pdb
 debug/
-target/
+/target
 
 # Zig
 zig-cache/
