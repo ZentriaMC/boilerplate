@@ -68,6 +68,7 @@ zig-out/
 /build
 /dist
 /out
+.astro/
 .cache/
 .docusaurus
 .eslintcache
