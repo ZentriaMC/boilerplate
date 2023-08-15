@@ -4,9 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    clean-devshell.url = "github:ZentriaMC/clean-devshell";
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... }:
+  outputs = { self, nixpkgs, flake-utils, clean-devshell, ... }:
     let
       supportedSystems = [
         "aarch64-darwin"
@@ -20,9 +21,11 @@
         pkgs = import nixpkgs {
           inherit system;
         };
+
+        mkShell = pkgs.callPackage clean-devshell.lib.mkDevShell { };
       in
       rec {
-        devShell = pkgs.mkShell {
+        devShell = mkShell {
           packages = [
 
           ];
